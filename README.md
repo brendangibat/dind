@@ -32,6 +32,11 @@ Run Docker-in-Docker and expose the inside Docker to the outside world:
 docker run --privileged -d -p 4444 -e PORT=4444 dind
 ```
 
+Change the size of the ramdisk being used. The default is 256M
+```
+docker run --env RAMDISK_SIZE=512 --privileged -d -p 4444 -e PORT=4444 dind
+```
+
 Note: when started with the `PORT` environment variable, the image will just
 the Docker daemon and expose it over said port. When started *without* the
 `PORT` environment variable, the image will run the Docker daemon in the
