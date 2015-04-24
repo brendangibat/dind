@@ -19,5 +19,4 @@ RUN chmod +x /usr/local/bin/wrapdocker
 ENV RAMDISK_SIZE 256
 
 # Define additional metadata for our image.
-VOLUME /var/lib/docker
 CMD ["wrapdocker"]
