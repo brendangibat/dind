@@ -1,4 +1,4 @@
-# Docker-in-Docker
+# Docker-in-Docker-on-Ramdisk
 
 This recipe lets you run Docker within Docker.
 
